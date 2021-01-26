@@ -205,7 +205,7 @@
 - [ ] Create two segments, one for revenue and one for conversion rate, and then review Acquisition > All Traffic.
 - [ ] View Ecommerce > Overview and toggle Traffic Sources in the Explorer tab.
 - [ ] Create two segments, one for revenue and one for conversion rate, and then review Conversions > Ecommerce.
-- [ ] Go to All Traffic > Source Medium and set eCommerce in the Conversions menu.
+- [x] Go to All Traffic > Source Medium and set eCommerce in the Conversions menu.
 
 ### Q35. Which calculated metric would return average events per user?
 - [ ] {{Total Events}} / {{Users}} Type: Float
@@ -215,7 +215,7 @@
 
 ### Q36. What report helps you understand how many days it takes from the time a user first visits to the time the user converts?
 - [ ] Assisted Conversions
-- [ ] Time Lag
+- [x] Time Lag
 - [ ] Path Length
 - [ ] Shopping Behavior
 
@@ -223,7 +223,7 @@
 - [ ] Create a new filter.
 - [ ] Create an annotation.
 - [ ] Create a new view.
-- [ ] Create a new property.
+- [x] Create a new property.
 
 ### Q38. You want to enable a destination goal for a URL that appends query string parameters with each submission—for example, /thanks?uid=123. Which match types would work?
 - [ ] equals to /thanks
@@ -323,7 +323,7 @@
 
 ### Q54. What does Google Analytics add to the first party cookie to differentiate new from returning visitors?What does Google Analytics add to the first party cookie to differentiate new from returning visitors?
 - [ ] an HTTP requestan HTTP request
-- [ ] a randomly generated client IDa randomly generated client ID
+- [x] a randomly generated client IDa randomly generated client ID
 - [ ] a 1x1 tracking pixela 1x1 tracking pixel
 - [ ] a SessionStorage object
 
@@ -340,7 +340,7 @@
 - [ ] Use Table Filter
 
 ### Q57. What channel receives attribution if no traffic source data is available?
-- [ ] (Other)
+- [x] (Other)
 - [ ] Direct
 - [ ] Referral
 - [ ] Organic Search
@@ -349,7 +349,11 @@
 - [ ] signing up for an account after clicking an ad
 - [ ] playing a video before signing up
 - [ ] buying a product after reading an email
-- [ ] filling out a contact form after reading a social post
+- [ ] filling out a contact f### Q66. By default, if a URL is accesed in the browser once as /contact/ and once again as /CONTACT/, how does the data appear in Google Analytics?
+- [x] one pageview for /contact/ and one pageview for /CONTACT/
+- [ ] two pageviews for /CONTACT/
+- [ ] An error will be present, as a filter must be created to support this use case.
+- [ ] two pageviews for /contact/form after reading a social post
 
 ### Q59. What parameter should you use if you were tracking different versions of an ad?
 - [ ] utm_campaign
@@ -392,3 +396,39 @@
 - [x] yes, by viewing in page analytics
 - [ ] yes, with event tracking
 - [ ] no, not possible
+
+### Q66. By default, if a URL is accesed in the browser once as /contact/ and once again as /CONTACT/, how does the data appear in Google Analytics?
+- [x] one pageview for /contact/ and one pageview for /CONTACT/
+- [ ] two pageviews for /CONTACT/
+- [ ] An error will be present, as a filter must be created to support this use case.
+- [ ] two pageviews for /contact/
+
+### Q67. If you wanted to create a user-defined metric to measure Revenue per User, what would you use?
+- [ ] custom dimensions
+- [x] calculated metrics
+- [ ] ecommerce metrics
+- [ ] custom metrics
+
+### Q68. If you want to track one destination goal but have two URLs that could trigger the goal (for example, /thank-you and /checkout-complete), what approach can you use?
+- [ ] Create a content grouping, and then use the group as the destination.
+- [x] Use a regular expression when adding the goal destination. 
+- [ ] Add the additional page as a funnel step.
+- [ ] This is not possible
+
+### Q69. You operate a website that has a three-step sign-up process. However, each step of the sign-up process loads at the same URL. If you wanted to assign a unique URL to each step and track it whithin Google Analytics as a pageview, what would you do?
+- [ ] Use virtual pageviews
+- [x] Use event tracking 
+- [ ] Use the preview tag
+- [ ] Configure a campaign URL
+
+### Q70. Which attribution model does Google Analytics apply by default for standard reports
+- [ ] Last interaction
+- [ ] First interaction 
+- [ ] Linear
+- [x] Last Non-Direct Click
+
+### Q71. If you wanted to compare the revenue, top products, and average order value between people who viewed three or more pages on your site, to those who viewed fewer, what do you do?  
+- [x] View the Ecommerce Overview report and create a table filter where Page Depth is ≥ 3 OR Page Depth is < 3.  
+- [ ] Create a custom segment where Page Depth is ≥ 3 and another segment where Page Depth is < 3. Apply both segments while on the Ecommerce Overview report
+- [ ] Create a custom report where Page Depth is ≥ 3 OR Page Depth is < 3. Toggle on Revenue, Top Products, and Average Order Value as Dimensions.
+- [ ] View the Product Performance report and add Page Depth as a secondary dimension. Create a table filter for Page Depth greater than 3 and Page Depth less than 3
